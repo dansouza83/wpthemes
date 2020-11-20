@@ -346,7 +346,7 @@ footer.main-footer a{
 }
 
 .container {
-	max-width: 955px;
+	max-width: 100%;
 }
 .content {
 	width: 65%;
@@ -354,11 +354,14 @@ footer.main-footer a{
 .sidebar {
 	width: 30%;
 }
+.block{
+	width: 94%;
+}
 
 /*For browser/screen widths less than 768px*/
 @media screen and (max-width: 768px) {
 	.container {
-					max-width: 100%;
+					max-width: 95%;
 	}
 	.content {
 					width: 100%;
@@ -366,4 +369,12 @@ footer.main-footer a{
 	.sidebar {
 					width: 100%;
 	}
+	.main {
+		float: left;
+		width: 94%;
+}
+.side{
+	margin-top: 3%;
+}
+
 }
