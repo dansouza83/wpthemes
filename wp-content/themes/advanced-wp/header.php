@@ -6,15 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php bloginfo('name'); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="js/my-menu.js"></script>
+	<script src="//code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 	<?php wp_head(); ?>
 
 </head>
 
 <body <?php body_class(); ?>>
 	<header class="header-bg">
-	<a class="toggle-nav" href="#">&#9776;</a>
 		<div class="container">
 			<h1>
 				<a href="<?php echo home_url('/'); ?>">
