@@ -287,6 +287,7 @@ footer.main-footer a{
   float:left;
   padding:0 6px;
 }
+
 .box p{
 	text-align: justify;
 }
@@ -300,4 +301,69 @@ footer.main-footer a{
 
 .textwidget, .box li {
     padding: 0px 4px 0px 3px;
+}
+
+.comment-meta{
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	overflow: auto;
+}
+
+.comment-meta img{
+	float: left;
+	margin-right: 10px;
+}
+
+.comment-meta time{
+	margin-left: 12px;
+}
+.comment-reply-link{
+	background: #009acd;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 15px;
+}
+ .comment-form input, .comment-form textarea{
+		width: 100%;
+		padding: 3px;
+		border: #ccc 1px solid;
+		margin-bottom:20px;
+}
+
+.comment-form input{
+	height: 30px;
+}
+
+.toggle-nav {
+	display: none !important;
+}
+
+@media screen and (max-width: 800px) {
+	#site-header {
+					display: none;
+	}
+}
+
+.container {
+	max-width: 955px;
+}
+.content {
+	width: 65%;
+}
+.sidebar {
+	width: 30%;
+}
+
+/*For browser/screen widths less than 768px*/
+@media screen and (max-width: 768px) {
+	.container {
+					max-width: 100%;
+	}
+	.content {
+					width: 100%;
+	}
+	.sidebar {
+					width: 100%;
+	}
 }
