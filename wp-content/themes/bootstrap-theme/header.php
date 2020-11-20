@@ -67,7 +67,12 @@
    <?php
 			$args = array(
 				'theme_location' => 'primary',
-				'menu_class' => 'navbar-nav font-weight-extra-bold ml-auto'
+				'menu_class' => 'navbar-nav font-weight-extra-bold ml-auto',
+				'container' => '',
+				'li-class' => 'nav-item',
+				'a_class' => 'nav-link',
+				'active_class' => 'active'
+
 			);
 			?>
 
