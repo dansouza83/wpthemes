@@ -19,7 +19,9 @@
    </a>
   </div>
   <div class="w3-col m9 l3">
-   <input class="w3-input" type="text" placeholder="Search..." />
+   <form action="<?php echo esc_url(home_url('/')); ?>" method="get">
+    <input name="s" class="w3-input" type="text" placeholder="Search..." />
+   </form>
   </div>
  </header>
  <div class="w3-row">

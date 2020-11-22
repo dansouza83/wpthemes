@@ -15,4 +15,5 @@
 	<br />
 
 	<?php the_content(); ?>
+	
 </article>

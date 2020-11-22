@@ -124,6 +124,8 @@ class WP_Widget_Categories_Custom extends WP_Widget {
 			?>
 
 			<ul class="w3-ul">
+   <li><a href="/wpthemes">All Photos</a></li>
+
 				<?php
 				$cat_args['title_li'] = '';
 
@@ -139,7 +141,7 @@ class WP_Widget_Categories_Custom extends WP_Widget {
 				wp_list_categories( apply_filters( 'widget_categories_args', $cat_args, $instance ) );
 				?>
 			</ul>
-
+<?php // "Return Button"  ?>
 			<?php
 			if ( 'html5' === $format ) {
 				echo '</nav>';

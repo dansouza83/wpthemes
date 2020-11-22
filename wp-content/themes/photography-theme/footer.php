@@ -1,12 +1,10 @@
 </div>
-  </div>
- </div>
- <footer>
+</div>
+</div>
+<footer>
   <p><?php bloginfo('name'); ?> &copy; 2020</p>
- </footer>
+</footer>
+<?php wp_footer(); ?>
 </body>
 
-</html>
-
-
-</html>
+</html

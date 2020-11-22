@@ -23,7 +23,7 @@ function init_widgets($id){
 		'id' => 'sidebar'  
 	));
 }
-add_action('widgets_init', 'init_widgets');
+add_action('widgets_init', 'init_widgets'); //hooks
 
 // Register Widgets
 

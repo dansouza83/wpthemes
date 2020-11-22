@@ -8,7 +8,7 @@
      <?php echo get_the_post_thumbnail($id, 'large', $attr); ?>
     </a>
   </div>
-
  <?php endif; ?>
+ 
  <?php the_content(); ?>
 </div>
