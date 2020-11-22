@@ -38,3 +38,8 @@ border-top: #333 solid 1px;
 .pic{
  text-align: center;
 }
+.pic img{
+ width: 100% !important;
+ height: 100% !important;
+ background-size: contain;
+}
