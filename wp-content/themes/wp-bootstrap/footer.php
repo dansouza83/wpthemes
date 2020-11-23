@@ -1,11 +1,11 @@
 <div class="container">
 		<hr>
 		<footer>
-			<p>&copy; 2016 WP-Bootstrap</p>
+			<p>&copy; 2020 WP-Bootstrap</p>
 		</footer>
 	</div>
 
-	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/jquery-1.12.0.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/bootstrap.js"></script>
 </body>
 </html>

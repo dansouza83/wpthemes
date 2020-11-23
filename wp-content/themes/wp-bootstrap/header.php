@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>WP-Bootstrap</title>
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+ <title>WP-Bootstrap</title>
+ <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css">
+ <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
+
 <body>
-	<nav class="navbar navbar-default">
-	  <div class="container">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-	    </div>
+ <nav class="navbar navbar-default">
+  <div class="container">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+     <span class="sr-only">Toggle navigation</span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+   </div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   <!-- Collect the nav links, forms, and other content for toggling -->
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-	      <form class="navbar-form navbar-left" role="search">
+    <?php
+				wp_nav_menu(array(
+					'theme_location'  => 'primary',
+					'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+					'container'       => false,
+					'menu_class'      => 'navbar-nav mr-auto',
+					'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+					'walker'          => new WP_Bootstrap_Navwalker(),
+				)); ?>
 
-	      </form>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
+    <form class="navbar-form navbar-left" role="search">
+
+    </form>
+   </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+ </nav>
