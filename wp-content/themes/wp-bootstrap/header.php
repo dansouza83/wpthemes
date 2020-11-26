@@ -2,7 +2,7 @@
 <html>
 
 <head>
- <title>WP-Bootstrap</title>
+ <title>Bootstrap-WP</title>
  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css">
  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
@@ -11,8 +11,7 @@
  <nav class="navbar navbar-default">
   <div class="container">
    <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
      <span class="sr-only">Toggle navigation</span>
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
@@ -23,19 +22,20 @@
 
    <!-- Collect the nav links, forms, and other content for toggling -->
    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
     <?php
-				wp_nav_menu(array(
-					'theme_location'  => 'primary',
-					'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
-					'container'       => false,
-					'menu_class'      => 'navbar-nav mr-auto',
-					'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-					'walker'          => new WP_Bootstrap_Navwalker(),
-				)); ?>
-
-    <form class="navbar-form navbar-left" role="search">
-
+    wp_nav_menu(array(
+     'theme_location'    => 'primary',
+     'depth'             => 2,
+     'container'         => false,
+     'menu_class'        => 'nav navbar-nav',
+     'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+     'walker'            => new wp_bootstrap_navwalker()
+    ));
+    ?>
+    <form method="get" class="navbar-form navbar-right" role="search" action="<?php echo esc_url(home_url('/')); ?>">
+     <label for="navbar-search" class="sr-only"><?php _e('Search', 'textdomain'); ?></label>
+    <div class="form-group"><input type="text" class="form-control" name="s" id="navbar-search"></div>
+    <button type="submit" class="btn btn-default"><?php _e('Search', 'textdomain'); ?></button>
     </form>
    </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

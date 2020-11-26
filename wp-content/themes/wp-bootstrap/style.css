@@ -32,3 +32,12 @@ article.post img{
 				height: auto;
 				margin-top: 30px;
 }
+
+.comment-list {
+	list-style: none;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.comment-item{
+	overflow: auto;
+}
