@@ -1,0 +1,58 @@
+/*
+Theme name: My-eShop
+Author: Daniel Souza
+Author URI: https://dansouza.site
+Description: Simple ecommerce theme
+Version: 1.0
+*/
+a{
+ color: black;
+}
+a:hover{
+ color: #333;
+}
+.button{
+ background: black !important;
+ border-bottom:4px #4c4c4c solid;
+}
+.button:hover{
+ background: rgb(43, 43, 43) !important;
+}
+header .main-nav{
+ float: right;
+ margin-top: 30px;
+ font-size: 18px;
+}
+header .main-nav li{
+ padding-right: 20px;
+}
+.showcase .callout{
+ text-align: center;
+ padding: 30px;
+ margin-bottom: 20px;
+ border: none;
+}
+.products .columns {
+ margin-bottom: 40px;
+}
+
+.product{
+ text-align: center;
+}
+.product .button{
+ margin-top: 10px;
+}
+.vertical li{
+ border-bottom: 1px #ccc solid;
+}
+.vertical li:last-child{
+ border-bottom: none;
+}
+footer{
+ background: #333;
+ text-align: center;
+ color: #fff;
+ margin-top: 30px;
+ padding-top:20px;
+ height:70px;
+}
