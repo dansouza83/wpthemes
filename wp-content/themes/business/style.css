@@ -1,7 +1,7 @@
 /*
 	Theme Name: Business Theme
-	Author: Brad Traversy
-	Author URI: http://eduonix.com
+	Author: Daniel Souza
+	Author URI: https://danosouza.site
 	Description: Simple Business Theme
 	Version: 1.0
 */
@@ -15,6 +15,10 @@ body {
 
 a {
   color: #0faf97;
+}
+
+a-reverse {
+  color: #fff;
 }
 
 .btn-primary {
@@ -188,16 +192,6 @@ a {
   padding-bottom: 60px;
 }
 
-.side-widget {
-  margin-bottom: 40px;
-}
-
-.side-widget h3 {
-  border-left: 5px #0faf97 solid;
-  padding-left: 10px;
-  margin-bottom: 15px;
-}
-
 .title-bar {
   background: #0faf97;
   color: #ffffff;
@@ -224,13 +218,29 @@ article.post .meta {
 
 article.post .meta li {
   float: left;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 article.post img {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
+}
+
+.side-widget {
+  margin-bottom: 40px;
+}
+
+.side-widget:first-child {
+  margin-top: -20px;
+}
+
+.side-widget h3 {
+  border-left: 10px #000000 solid;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #0faf97 !important;
+  color: #fff;
 }
 
 .cat-item,
@@ -242,8 +252,74 @@ article.post img {
   background-color: #fff;
   border: 1px solid #ddd;
 }
+
 .cat-item,
 .side-widget ul {
-padding: 0;
+  padding: 0;
+}
 
+.comments {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.comments h2,
+comments h3 {
+  background: #0faf97;
+  color: #fff;
+  padding: 5px;
+}
+
+.comment-body {
+  border: #ccc 1px solid;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+}
+
+.comment-meta {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  overflow: auto;
+}
+
+.comment-meta img {
+  float: left;
+  margin-right: 10px;
+}
+
+.comment-meta time {
+  margin-left: 12px;
+}
+
+.comment::marker {
+  marker: none;
+}
+
+.comment-reply-link {
+  background: #0faf97;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 3px;
+  border: #ccc 1px solid;
+  margin-bottom: 20px;
+}
+
+.submit {
+  background: #0faf97;
+  color: #fff;
+}
+
+.submit:hover {
+  background: #333;
+  color: #0faf97;
+  font-weight: bold;
 }
