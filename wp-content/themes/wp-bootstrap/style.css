@@ -1,43 +1,44 @@
 /*
 	Theme Name: WP-BootsTrap
 	Author: Daniel Souza
-	Author URI: https://dansouza.site
+ Author URI: https://github.com/dansouza83/
 	Description: Bootstrap Wordpress Theme
 	Version: 1.0
 */
-article.post{
-	border-bottom: #ccc solid 1px;
-	padding-bottom: 20px;
-	margin-bottom: 30px;
+article.post {
+ border-bottom: #ccc solid 1px;
+ padding-bottom: 20px;
+ margin-bottom: 30px;
 }
 
-article.post:last-child{
-	border-bottom:none;
+article.post:last-child {
+ border-bottom: none;
 }
 
-article.post img{
-	width:100%;
-	height:auto;
-	margin-top:30px;
+article.post img {
+ width: 100%;
+ height: auto;
+ margin-top: 30px;
 }
 
-article.post .meta{
-	background: #f4f4f4;
-	padding: 8px 12px;
-	color:#333;
+article.post .meta {
+ background: #f4f4f4;
+ padding: 8px 12px;
+ color: #333;
 }
 
-article.post img{
-	   max-width: 100%;
-				height: auto;
-				margin-top: 30px;
+article.post img {
+ max-width: 100%;
+ height: auto;
+ margin-top: 30px;
 }
 
 .comment-list {
-	list-style: none;
-	margin: 0 !important;
-	padding: 0 !important;
+ list-style: none;
+ margin: 0 !important;
+ padding: 0 !important;
 }
-.comment-item{
-	overflow: auto;
+
+.comment-item {
+ overflow: auto;
 }

@@ -1,50 +1,50 @@
-/* 
+/*
 Theme Name: Photography WP
 Author: Daniel Souza
 Author URI: https://github.com/dansouza83/wpthemes
 Description: Photo Gallery Wodpress Theme
 Version: 1.0
 */
-body{
-	background: #000;
-	color:#fff;
+body {
+ background: #000;
+ color: #fff;
 }
 
-a{
-	text-decoration: none;
+a {
+ text-decoration: none;
 }
 
-li{
-	list-style: none;
+li {
+ list-style: none;
 }
 
-input{
-	color:#333;
+input {
+ color: #333;
 }
 
-img{
-	width:100%;
+img {
+ width: 100%;
 }
 
-header input{
-	margin-top:15px;
+header input {
+ margin-top: 15px;
 }
 
-.post{
-	padding:20px;
+.post {
+ padding: 20px;
 }
 
-.pic{
-	text-align: center;
+.pic {
+ text-align: center;
 }
 
-.pic img{
-	width:100% !important;
-	height:100% !important;
+.pic img {
+ width: 100% !important;
+ height: 100% !important;
 }
 
-footer{
-	text-align: center;
-	margin-top:40px;
-	border-top: #333 solid 1px;
+footer {
+ text-align: center;
+ margin-top: 40px;
+ border-top: #333 solid 1px;
 }

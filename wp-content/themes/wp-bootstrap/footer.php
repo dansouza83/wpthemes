@@ -5,7 +5,7 @@
 		</footer>
 	</div>
 
-	<script src="js/jquery-1.12.0.min.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/bootstrap.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery-1.12.3.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>
 </body>
 </html>
