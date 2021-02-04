@@ -40,21 +40,19 @@ function university_post_types()
  // Professor Post Type
 
  register_post_type('professor', array(
-  'supports'      => array('title', 'editor', 'excerpt'),
-  'show_in_rest'  => true, // Switch to Guttenberg Block Editor
-  'has_archive'   => true, // Add archive
+  'supports'      => array('title', 'editor','thumbnail'),
   'public'        => true, // Permission
-  'menu_icon'     => 'dashicons-groups', // Icon from right menu
-  'rewrite'       => array('slug' => 'professor'), // Plural to events link
+  'show_in_rest'  => true, // Switch to Guttenberg editor
+  'menu_icon'     => 'dashicons-welcome-learn-more', // Icon from right menu
   'labels'        => array(
    'name'          => 'Professor', // Title
    'add_new_item'  => 'Add New Professor',
    'edit_item'     => 'Edit Professor',
    'all_items'     => 'All Professor',
-   'singular_name' => 'Professor'
+   'singular_name' => 'Professor',
   )
  ));
- 
+
 }
 
 add_action('init', 'university_post_types');
