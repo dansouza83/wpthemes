@@ -21,6 +21,7 @@
   .banner {
    background: url(<?php echo get_theme_mod('banner_image', get_bloginfo('template_url') . '/img/banner.jpg') ?>) no-repeat center center;
   }
+
  </style>
 </head>
 

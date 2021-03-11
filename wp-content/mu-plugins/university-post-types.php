@@ -1,6 +1,24 @@
 <?php
 function university_post_types()
 {
+
+ // Campus Post Type
+ register_post_type('campus', array(
+  'supports'      => array('title', 'editor', 'excerpt'),
+  'show_in_rest'  => true, // Switch to Guttenberg editor
+  'has_archive'   => true, // Add archive
+  'public'        => true, // Permission
+  'menu_icon'     => 'dashicons-location-alt', // Icon from right menu
+  'rewrite'       => array('slug' => 'campuses'), // Plural to campuss link
+  'labels'        => array(
+   'name'          => 'Campuses', // Title
+   'add_new_item'  => 'Add New Campus',
+   'edit_item'     => 'Edit Campus',
+   'all_items'     => 'All Campuses',
+   'singular_name' => 'Campus'
+  )
+ ));
+
  // Event Post Type
 
  register_post_type('event', array(
