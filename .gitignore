@@ -129,3 +129,6 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+# ignore files
+wp-config.php
